@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn-submit {
+  @apply bg-blue-500 text-white uppercase py-2 px-6 rounded-full;
+  box-shadow: 0 7px 10px rgba(0, 0, 255, 0.5); /* Adjust values as needed */
+}
+
+.label{
+  float: left;
+}
+
+.progress-container {
+  width: 100%;
+  height: 7px;
+  background-color: #efefefa8;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.mainDiv{
+  height: 80vh;
+}
+
+.steps{
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.main{
+  height: 75vh;
+  justify-content: center;
+}
+
+.stepsComponentMainDiv{
+  background: #efefefa8;
+  width: 100%;
+  padding-right: 12px;
+  text-transform: uppercase;
+}
+
+.inputCheckBoxWithOneValue{
+  flex-direction: row-reverse;
+  display: flex;
+}
+
+.formDataDiv{
+  width: 40em;
+}
+
+.divvv{
+  height: 80vh;
+}
+
+
+.wrapper-1{
+  width:100%;
+  height:100vh;
+  display: flex;
+flex-direction: column;
+}
+.wrapper-2{
+  padding :30px;
+  text-align:center;
+}
+.h1{
+    font-family: 'Kaushan Script', cursive;
+  font-size:4em;
+  letter-spacing:3px;
+  color:#5892FF ;
+  margin:0;
+  margin-bottom:20px;
+}
+.wrapper-2 p{
+  margin:0;
+  font-size:1.3em;
+  color:#aaa;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing:1px;
+}
+.wrapper-2 h6{
+  margin:0;
+  font-size:1.3em;
+  color:#828282;
+  text-decoration-line: underline;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing:1px;
+}
+.footer-like{
+  margin-top: auto; 
+  background:#D7E6FE;
+  padding:6px;
+  text-align:center;
+}
+
+@media (min-width:360px){
+  h1{
+    font-size:4.5em;
+  }
+  .go-home{
+    margin-bottom:20px;
+  }
+}
+
+@media (min-width:600px){
+  .content{
+  max-width:1000px;
+  margin:0 auto;
+}
+  .wrapper-1{
+  height: initial;
+  max-width:620px;
+  margin:0 auto;
+  margin-top:50px;
+  box-shadow: 4px 8px 40px 8px rgba(88, 146, 255, 0.2);
+}
+  
+}
